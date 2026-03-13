@@ -14,7 +14,7 @@ export default function SquadPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("https://배포된-백엔드-주소/api/players") // http://127.0.0.1:8000/api/players
+    fetch("https://arsenal-cy44.onrender.com/api/players") // http://127.0.0.1:8000/api/players
       .then((res) => res.json())
       .then((data) => {
         const sorted = [...data.players].sort(
