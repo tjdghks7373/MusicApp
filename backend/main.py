@@ -8,11 +8,10 @@ app = FastAPI()
 # CORS 설정 (Next.js에서 접근 가능하게)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"], 
+    allow_origins=["https://arsenal-eight.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
-)
 
 @app.get("/api/players")
 def get_players():
